@@ -1,7 +1,7 @@
 # NoSQL-Application
 CS157C Group 1 Team Project
 
-How to run:
+##How to run:
 	1. Clone project
 	2. In local project directory, run in terminal
 			i. npm install
