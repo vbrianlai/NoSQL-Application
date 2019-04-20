@@ -1,16 +1,19 @@
-form(action="." method="POST")
-  label(for="name") Name:
-  input(
-    type="text"
-    id="name"
-    name="name"
-  )
+extends layout
 
-  label(for="email") Email:
-  input(
-    type="email"
-    id="email"
-    name="email"
-  )
+block content
+  form(action="." method="POST")
+    label(for="book") Book:
+    input(
+      type="text"
+      id="book"
+      name="book"
+    )
 
-  input(type="submit" value="Submit")
+    label(for="authoer") Author:
+    input(
+      type="text"
+      id="author"
+      name="author"
+    )
+
+    input(type="submit" value="Submit")

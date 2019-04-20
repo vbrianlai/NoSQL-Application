@@ -1,0 +1,16 @@
+extends layout
+
+block content
+
+		if books.length
+			table
+				tr
+					th Title
+					th Authoer
+				each book in books
+					tr
+						td= book.Title
+						td= book.Author
+		else
+			p No books yet
+
