@@ -6,11 +6,29 @@ block content
 			table
 				tr
 					th Title
-					th Authoer
+					th #[i Author]
+					th BibNum
+					th PublicationYear
+					th Publisher
+					th Subjects
+					th ItemType
+					th ItemCount
+					th ItemCollection
+					th ItemLocation
+					th ReportDate
+					
 				each book in books
 					tr
-						td= book.Title
-						td= book.Author
+						td #[u #{book.Title}]
+						td #[i #{book.Author}]
+						td #{book.BibNum}
+						td #{book.PublicationYear}
+						td #{book.Publisher}
+						td #{book.Subjects}
+						td #{book.ItemType}
+						td #{book.ItemCount}
+						td #{book.ItemCollection}
+						td #{book.ItemLocation}
+						td #{book.ReportDate}
 		else
 			p No books yet
-
